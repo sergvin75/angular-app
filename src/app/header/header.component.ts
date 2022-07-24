@@ -15,13 +15,12 @@ import {Component} from "@angular/core";
         justify-content: center;
         align-items: center;
         background: red;
-        h1{
-          color: white;
-          font-size: 30px;
-          font-weight: bold;
+        h1 {
+        color: blue;
+        font-size: 30px;
+        font-weight: bold;
         }
       }
-
 
     `
   ]
