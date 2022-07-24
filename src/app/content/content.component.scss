@@ -1,7 +1,48 @@
 .content{
-  margin: 100px auto 0;
-  width: 100px;
-  font-size: 20px;
-  font-weight: 600;
-  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  .control{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    button{
+      outline: none;
+      border: none;
+      background: #3b73ff;
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      height: 50px;
+      width: 50px;
+      border-radius: 5px;
+      transition: 0.2s all;
+      &:hover{
+        background: #233b9a;
+      }
+    }
+    .green{
+      background: green;
+      &:hover{
+        background: #014b01;
+      }
+    }
+    .default{
+      width: 120px;
+      background: #f14f4f;
+      &:hover{
+        background: #8f2c2c;
+      }
+    }
+    p{
+      text-align: center;
+      margin: 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: black;
+    }
+  }
+
 }

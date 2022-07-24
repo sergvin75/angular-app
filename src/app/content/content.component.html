@@ -1,1 +1,8 @@
-<p class="content">content works!</p>
+<div class="content">
+  <div class="control">
+    <button (click)="add()">+</button>
+    <p>{{count}}</p>
+    <button class="green" (click)="remove()">-</button>
+    <button class="default" (click)="defaultCount()">обнулить</button>
+  </div>
+</div>
