@@ -1,4 +1,15 @@
-import { Component } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  OnChanges,
+  DoCheck,
+  AfterContentInit,
+  AfterContentChecked,
+  AfterViewInit,
+  AfterViewChecked,
+  OnDestroy,
+  SimpleChanges,
+} from '@angular/core';
 
 @Component({
   selector: 'app-content',
