@@ -1,14 +1,6 @@
 import {
   Component,
-  OnInit,
-  OnChanges,
   DoCheck,
-  AfterContentInit,
-  AfterContentChecked,
-  AfterViewInit,
-  AfterViewChecked,
-  OnDestroy,
-  SimpleChanges,
 } from '@angular/core';
 
 @Component({
@@ -16,15 +8,24 @@ import {
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.scss']
 })
-export class ContentComponent {
-  public count:number=0
-  public add():void{
-    this.count++
-  }
-  public remove():void{
-    this.count--
-  }
-  public defaultCount():void{
-    this.count = 0
-  }
+export class ContentComponent implements DoCheck {
+    public count:number=0
+    public disabled:boolean = false
+
+    public add():void{
+      this.count++
+    }
+    public remove():void{
+      this.count--
+    }
+    public defaultCount():void{
+      this.count = 0
+    }
+//  DoCheck - после каждого обновления проверяет наши свойства
+    public ngDoCheck(): void {
+      this.disabled = this.count===0
+
+    }
+
 }
+

@@ -2,7 +2,7 @@
   <div class="control">
     <button (click)="add()">+</button>
     <p>{{count}}</p>
-    <button class="green" (click)="remove()">-</button>
+    <button class="green" [disabled]= "disabled" (click)="remove()">-</button>
     <button class="default" (click)="defaultCount()">обнулить</button>
   </div>
 </div>
